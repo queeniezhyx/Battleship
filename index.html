@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+</head>
+<body>
+     <!--Portfolio Nav-->
+    <div class="port-nav">
+        <link><a href="https://sallycunningham620.github.io/sallycunningham.developer.1/">View Sally Cunningham Portfolio</a>
+    </div>
+    <h1>Battleship Game</h1>
+    <div id="game-container">
+        <div>
+            <h2>Player Board</h2>
+            <div id="player-board" class="board"></div>
+        </div>
+        <div>
+            <h2>Computer Board</h2>
+            <div id="computer-board" class="board"></div>
+        </div>
+    </div>
+    <div id="bottom-box">
+        <div class="ships-container">
+            <div id="0" class="destroyer-size destroyer horizontal" data-size="2" draggable="true"></div>
+            <div id="1" class="submarine-size submarine horizontal" data-size="3" draggable="true"></div>
+            <div id="2" class="cruiser-size cruiser horizontal" data-size="3" draggable="true"></div>
+            <div id="3" class="battleship-size battleship horizontal" data-size="4" draggable="true"></div>
+            <div id="4" class="carrier-size carrier horizontal" data-size="5" draggable="true"></div>
+        </div>
+        <div class="btn-box">
+            <button id="flip-button">FLIP</button>
+            <button id="start-button">START</button>
+            <button id="reset-button">RESET</button>
+        </div>
+        <p id="game-message"></p>
+        <p id="turn-message"></p>
+    </div>
+    <!-- Webpack will inject the bundle.js script automatically -->
+</body>
+</html>

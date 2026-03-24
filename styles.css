@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/*Portfolio Nav*/
+.port-nav {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  padding: 5px;
+}
+
+.port-nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+.port-nav a:hover {
+  color:#fd9047;
+}
+
+/*Main page*/
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;    
+    width: 300px;
+    height: 300px;
+    border: 2px solid black; 
+}
+
+.cell {
+    background-color: #eee;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+#game-container {
+    display: flex;
+    gap: 30px;
+}
+
+#game-message {
+    padding: 10px;
+    width: 150px;
+}
+
+#turn-message {
+    width: 100px;
+}
+
+#bottom-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.ships-container {
+    width: 300px;
+    height: auto;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.destroyer {
+    background-color: brown;
+}
+
+.submarine {
+    background-color: green;
+}
+
+.cruiser {
+    background-color: purple;
+}
+
+.battleship {
+    background: orange;
+}
+
+.carrier {
+    background-color: blue;
+}
+
+#computer-board .destroyer,
+#computer-board .submarine,
+#computer-board .cruiser,
+#computer-board .battleship,
+#computer-board .carrier {
+    background-color: #eee
+}
+
+/* Dynamic Size*/
+.destroyer-size.horizontal { width: 60px; height: 30px; margin: 3px}
+.destroyer-size.vertical { width: 30px; height: 60px; margin: 5px}
+
+.submarine-size.horizontal { width: 90px; height: 30px; margin: 3px}
+.submarine-size.vertical { width: 30px; height: 90px; margin: 5px}
+
+.cruiser-size.horizontal { width: 90px; height: 30px; margin: 3px}
+.cruiser-size.vertical { width: 30px; height: 90px; margin: 5px}
+
+.battleship-size.horizontal { width: 120px; height: 30px; margin: 3px}
+.battleship-size.vertical { width: 30px; height: 120px; margin: 5px}
+
+.carrier-size.horizontal { width: 150px; height: 30px; margin: 3px}
+.carrier-size.vertical { width: 30px; height: 150px; margin: 5px}
+
+.hover {
+    background-color: grey; 
+}
+
+.hit {
+    background-color: red !important;
+}
+
+.miss {
+    background-color: rgb(148, 147, 147) !important;
+}
